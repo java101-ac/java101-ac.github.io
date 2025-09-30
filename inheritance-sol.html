@@ -22,16 +22,13 @@
         to access private properties of its superclass.
       </p>
 	<hr>
-      <p>3. Which of the following are true?<br><br>  
-	&nbsp;&nbsp;&nbsp; I. A subclass can be the superclass of another class<br>
-	&nbsp;&nbsp;&nbsp; II.  If class <code>A</code> extends class <code>B</code>, then <code>B</code> is the subclass of <code>A</code><br>
-	&nbsp;&nbsp;&nbsp; III. A subclass cannot call super, but a superclass can<br>
-	&nbsp;&nbsp;&nbsp; IV. A class that extends another inherits its accessible properties<br><br>
-	
-	&nbsp;&nbsp;&nbsp; A. I and III only<br>
-        &nbsp;&nbsp;&nbsp; B. IV only<br>
-        &nbsp;&nbsp;&nbsp; C. I and IV only<br>
-        &nbsp;&nbsp;&nbsp; D. I, II, III, and IV
+      <p>3. <em>C.</em> I. is true: consider class <code>A</code>. Let class <code>B</code> extend class <code>A</code>. 
+		  By definition, <code>B</code> is the subclass of <code>A</code>. Let class <code>C</code> extend <code>B</code>.
+		  Even though <code>B</code> is a subclass of <code>A</code>, it is the superclass of <code>C</code>. II. is false:
+		  If class <code>A</code> extends class <code>B</code>, then <code>B</code> is the <em>superclass</em> of <code>A</code>.
+		  III. is false: <code>super</code> is a keyword used by the subclass to access properties of the superclass. IV. is true:
+		  By definition, extending a class means the subclass inherits the superclass's accessible properties.
+		  <br><br>
   	</p>
 	<hr>
       <p>4. Will the below code compile? Why or why not?<br>
