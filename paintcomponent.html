@@ -1,0 +1,70 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><!-- InstanceBegin template="../Templates/template.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>paintComponent Quiz</title>
+<!-- InstanceEndEditable --> 
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<style type="text/css">
+  p { max-width:700px; }
+</style>
+</head>
+
+<body>
+<h1><code>paintComponent</code></h1>
+
+    <td rowspan="1" valign="top"><!-- InstanceBeginEditable name="contents.1" --> 
+      <p><strong><em>Exercises</em></strong></p>
+      <strong>Note:</strong>
+      <p>For the following exercises, assume <code>g</code> stores a <code>Graphics</code> object.
+      <p>1. What does g.drawOval(0,0,50,50); display?
+<br><br>
+        &nbsp;&nbsp;&nbsp; A. A circle of radius 25 pixels in the top left-hand corner<br>
+        &nbsp;&nbsp;&nbsp; B. An oval of radius 50 pixels<br>
+        &nbsp;&nbsp;&nbsp; C. A circle of radius 0 positioned 50 pixels from the top and left<br>
+        &nbsp;&nbsp;&nbsp; D. An oval of radius 25 pixels 
+</p>
+	<hr>
+      <p>2. What does the code below display in the <code>JFrame</code>?<br><br>
+        <pre>
+          int[] x = {10,30,60,100,150};
+  	      int[] y = {20,40,70,110,160};
+  
+  	      g.fillPolygon(x,x,3);
+        </pre>
+        &nbsp;&nbsp;&nbsp; A. A line segment<br>
+        &nbsp;&nbsp;&nbsp; B. A filled polygon consisting of 5 vertices<br>
+        &nbsp;&nbsp;&nbsp; C. A filled polygon consisting of 3 vertices<br>
+        &nbsp;&nbsp;&nbsp; D. Nothing, an error will prevent execution<br>
+</p>
+	<hr>
+      <p>3. Will the code below display identical arcs on the <code>JFrame</code>? Why or why not?<br><br>  
+	    <pre>
+        g.drawArc(50,50,20,20,-180,270);
+  	    g.drawArc(50,50,20,20,90,-270); 
+      </pre>
+  &nbsp;&nbsp;&nbsp; I. Yes. The angle drawn by both lines of code are geometrically equivalent to each other<br>
+	&nbsp;&nbsp;&nbsp; II. Yes. The <code>arcAngle</code> of the second line of code is identical, just in a different direction<br>
+	&nbsp;&nbsp;&nbsp; III. No. The <code>startAngle</code> and <code>arcAngle</code> parameters are different, so a different arc will be drawn<br>
+	&nbsp;&nbsp;&nbsp; IV. No. The arcs drawn start and end at opposite points, so they will not be identical<br><br>
+	
+	&nbsp;&nbsp;&nbsp; A. I only<br>
+        &nbsp;&nbsp;&nbsp; B. III and IV only<br>
+        &nbsp;&nbsp;&nbsp; C. I, II, and IV only<br>
+        &nbsp;&nbsp;&nbsp; D. I, II, III, and IV
+  	</p>
+	<hr>
+      <p>4. What is the purpose of using a try-catch block with <code>Scanner</code> and <code>PrintWriter</code>?<br><br>
+      &nbsp;&nbsp;&nbsp; A. The try-catch block can alert you of a file-not-found error<br>
+      &nbsp;&nbsp;&nbsp; B. <code>Scanner</code> and <code>PrintWriter</code> will not function properly without a try-catch block<br>
+      &nbsp;&nbsp;&nbsp; C. A try-catch prevents large files from being corrupted during parsing<br>
+      &nbsp;&nbsp;&nbsp; D. A try-catch block optimizes the performance of <code>Scanner</code> and <code>PrintWriter</code></code>
+    <hr>
+      
+      <p><a href="../terms.concepts/solutions.html">VIII. Solutions to Practice Exercises</a></p>
+      <!-- InstanceEndEditable --></td>
+  </tr>
+  <!-- InstanceEndRepeatEntry --><!-- InstanceEndRepeat --> 
+</table>
+</body>
+<!-- InstanceEnd --></html>
