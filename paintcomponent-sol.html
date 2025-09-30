@@ -1,0 +1,44 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><!-- InstanceBegin template="../Templates/template.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>paintComponent Quiz Solutions</title>
+<!-- InstanceEndEditable --> 
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<style type="text/css">
+  p { max-width:700px; }
+</style>
+</head>
+
+<body>
+    <td rowspan="1" valign="top"><!-- InstanceBeginEditable name="contents.1" --> 
+      <p><strong><em>Solutions to Exercises</em></strong></p>
+      <p>1. <em>A.</em> The parameters of <code>drawOval</code> are <code>int xPos, int yPos, int width, int height</code>.
+        The position <code>(0,0)</code> is the top left-hand corner. Because the width and height of the rectangle are equal,
+        the circle inscribed in it will have a radius half the length of the rectangle's sides.
+<br><br>
+</p>
+	<hr>
+      <p>2. <em>A</em>. Array <code>x</code> is passed in for the first two parameters. The resulting line drawn will be the function
+        y = x. The last parameter, <code>3</code>, will draw three coordinate pairs from <code>x</code>: <code>(10,10)</code>,
+        <code>(30,30)</code>, and <code>(60,60)</code>.
+        Because the number of vertices to draw is &le the length of array <code>x</code>, no error will occur.
+</p>
+	<hr>
+      <p>3. Will the code below display identical arcs on the <code>JFrame</code>? Why or why not?<br><br>  
+	    <pre>
+        g.drawArc(50,50,20,20,-180,270);
+  	    g.drawArc(50,50,20,20,90,-270); 
+      </pre>
+  &nbsp;&nbsp;&nbsp; A. Yes. The angle drawn by both lines of code are geometrically equivalent to each other<br>
+	&nbsp;&nbsp;&nbsp; B. Yes. The <code>arcAngle</code> of the second line of code is identical, just in a different direction<br>
+	&nbsp;&nbsp;&nbsp; C. No. The <code>startAngle</code> and <code>arcAngle</code> parameters are different, so a different arc will be drawn<br>
+	&nbsp;&nbsp;&nbsp; D. No. The arcs drawn start and end at opposite points, so they will not be identical<br><br>
+  	</p>
+	<hr>
+      <!-- InstanceEndEditable --></td>
+  </tr>
+  <!-- InstanceEndRepeatEntry --><!-- InstanceEndRepeat --> 
+</table>
+</body>
+<!-- InstanceEnd --></html>
