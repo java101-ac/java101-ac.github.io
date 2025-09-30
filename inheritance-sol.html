@@ -14,12 +14,12 @@
 </head>
     <td rowspan="1" valign="top"><!-- InstanceBeginEditable name="contents.1" --> 
       <p><strong><em>Solutions to Exercises</em></strong></p>
-      <p>1. <em>A.</em> Inheritance follows an "IS-A" relationship. Monkey IS-A Mammal. Choice C and D incorrectly invert this relationship.
-        For example, "Fruit IS-A Apple" is logically incorrect. Choice B is incorrect because "School IS-A grades" is nonsensical.<br><br>
+      <p>1. <em>A.</em> Inheritance follows an "IS-A" relationship. Choice A is congruent with this relationship: Monkey IS-A Mammal. Choice C and D incorrectly invert this relationship.
+        For example, "Canine IS-A Dog" is logically incorrect. Choice B is incorrect because "School IS-A Grades" does not establish a sensical relationship.<br><br>
 </p>
 	<hr>
       <p>2. <em>C.</em> <code>super</code> can be used to access public or protected variables, methods, and constructors. It cannot be used
-        to access private properties of its superclass.
+        to access private properties of the superclass (because they are private!)
       </p>
 	<hr>
       <p>3. <em>C.</em> I. is true: consider class <code>A</code>. Let class <code>B</code> extend class <code>A</code>. 
@@ -48,39 +48,12 @@
       &nbsp;&nbsp;&nbsp; C. Yes, because a <code>super</code> call is implicitly made in the constructor<br>
       &nbsp;&nbsp;&nbsp; D. Yes, because the <code>Mendel</code> constructor is <code>public</code>
     <hr>
-      <p>5. What is the output of the code below?<br>
-      <pre>
-		class A  {
-		  public A() {
-		  	System.out.print("a");
-		  }
-          
-		  public void yay() {
-		  	System.out.print("A");
-		  }
-		}
-        
-        public class B extends A {
-		  public B() {
-		  	System.out.print("b");
-		  }
-        	
-		  public void yay() {
-		  	System.out.print("B");
-		  	super.yay();
-		  }
-		  
-		  public static void main(String[] args) {
-		  	B bee = new B();
-		  	bee.yay();
-		  }
-		}
-      </pre>
-      &nbsp;&nbsp;&nbsp; A. <code>abBA</code><br>
-      &nbsp;&nbsp;&nbsp; B. <code>baBA</code><br>
-      &nbsp;&nbsp;&nbsp; C. <code>ABA</code><br>
-      &nbsp;&nbsp;&nbsp; D. <code>baAb</code>
-      
+      <p>5. <em>A.</em> <code>B bee = new B();</code>invokes the constructor of class <code>B</code>. There is no explicit
+		  <code>super</code> call in <code>B</code>'s constructor, so an implicit <code>super</code> call invokes the superclass's
+		  constructor <code>A</code>. <code>"a"</code> is printed. Then, the program goes back to the original subclass's constructor 
+		  and prints <code>"b"</code>. <code>bee.yay();</code> calls the subclass's <code>yay()</code> method. <code>"B"</code> is printed.
+		  <code>super.yay()</code> calls the superclass's <code>yay</code> method and prints <code>"A"</code>.<br><br>
+    
       <p><a href="../terms.concepts/solutions.html">VIII. Solutions to Practice Exercises</a></p>
       <!-- InstanceEndEditable --></td>
   </tr>
