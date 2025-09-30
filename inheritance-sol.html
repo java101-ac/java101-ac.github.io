@@ -1,0 +1,93 @@
+<!--IDEA: HOST THIS HTML FILE ON GITHUB PAGES, THEN HAVE JAVA101 LINK TO THE STATIC PAGE!>
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><!-- InstanceBegin template="../Templates/template.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>Inheritance Quiz Solutions</title>
+<!-- InstanceEndEditable --> 
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<style type="text/css">
+  p { max-width:700px; }
+</style>
+
+</head>
+    <td rowspan="1" valign="top"><!-- InstanceBeginEditable name="contents.1" --> 
+      <p><strong><em>Solutions to Exercises</em></strong></p>
+      <p>1. <em>A.</em> Inheritance follows an "IS-A" relationship. Monkey IS-A Mammal. Choice C and D incorrectly invert this relationship.
+        For example, "Fruit IS-A Apple" is logically incorrect. Choice B is incorrect because "School IS-A grades" is nonsensical.<br><br>
+</p>
+	<hr>
+      <p>2. <em>C.</em> <code>super</code> can be used to access public or protected variables, methods, and constructors. It cannot be used
+        to access private properties of its superclass.
+      </p>
+	<hr>
+      <p>3. Which of the following are true?<br><br>  
+	&nbsp;&nbsp;&nbsp; I. A subclass can be the superclass of another class<br>
+	&nbsp;&nbsp;&nbsp; II.  If class <code>A</code> extends class <code>B</code>, then <code>B</code> is the subclass of <code>A</code><br>
+	&nbsp;&nbsp;&nbsp; III. A subclass cannot call super, but a superclass can<br>
+	&nbsp;&nbsp;&nbsp; IV. A class that extends another inherits its accessible properties<br><br>
+	
+	&nbsp;&nbsp;&nbsp; A. I and III only<br>
+        &nbsp;&nbsp;&nbsp; B. IV only<br>
+        &nbsp;&nbsp;&nbsp; C. I and IV only<br>
+        &nbsp;&nbsp;&nbsp; D. I, II, III, and IV
+  	</p>
+	<hr>
+      <p>4. Will the below code compile? Why or why not?<br>
+      <pre>
+        public class Mendel extends Biologist {
+		  private int peas;
+  
+		  public Mendel(String color, int peas) {
+		    int x = 3;
+		    this.peas = 28000;	
+		  }
+        }
+      </pre>
+  
+      &nbsp;&nbsp;&nbsp; A. No, because the <code>super</code> keyword is not in the constructor<br>
+      &nbsp;&nbsp;&nbsp; B. No, because the <code>color</code> parameter is not made a field<br>
+      &nbsp;&nbsp;&nbsp; C. Yes, because a <code>super</code> call is implicitly made in the constructor<br>
+      &nbsp;&nbsp;&nbsp; D. Yes, because the <code>Mendel</code> constructor is <code>public</code>
+    <hr>
+      <p>5. What is the output of the code below?<br>
+      <pre>
+		class A  {
+		  public A() {
+		  	System.out.print("a");
+		  }
+          
+		  public void yay() {
+		  	System.out.print("A");
+		  }
+		}
+        
+        public class B extends A {
+		  public B() {
+		  	System.out.print("b");
+		  }
+        	
+		  public void yay() {
+		  	System.out.print("B");
+		  	super.yay();
+		  }
+		  
+		  public static void main(String[] args) {
+		  	B bee = new B();
+		  	bee.yay();
+		  }
+		}
+      </pre>
+      &nbsp;&nbsp;&nbsp; A. <code>abBA</code><br>
+      &nbsp;&nbsp;&nbsp; B. <code>baBA</code><br>
+      &nbsp;&nbsp;&nbsp; C. <code>ABA</code><br>
+      &nbsp;&nbsp;&nbsp; D. <code>baAb</code>
+      
+      <p><a href="../terms.concepts/solutions.html">VIII. Solutions to Practice Exercises</a></p>
+      <!-- InstanceEndEditable --></td>
+  </tr>
+  <!-- InstanceEndRepeatEntry --><!-- InstanceEndRepeat --> 
+</table>
+</body>
+<!-- InstanceEnd --></html>
