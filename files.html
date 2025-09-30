@@ -18,7 +18,7 @@
     <td rowspan="1" valign="top"><!-- InstanceBeginEditable name="contents.1" --> 
       <p><strong><em>Exercises</em></strong></p>
       <p>1. What happens if you <strong><em>do not</em></strong> call <code>close()</code> after writing or appending to a text file?<br><br>
-        &nbsp;&nbsp;&nbsp; A. Data written or appended to the text file will not be saved, text file contents remain unchanged<br>
+        &nbsp;&nbsp;&nbsp; A. Text file data will not be saved, text file contents remain unchanged<br>
         &nbsp;&nbsp;&nbsp; B. A runtime error will occur when <code>PrintWriter</code> is used<br>
         &nbsp;&nbsp;&nbsp; C. <code>close()</code> is only required for reading, so omitting it won't affect anything<br>
         &nbsp;&nbsp;&nbsp; D. An error will be thrown by the try-catch block
@@ -26,10 +26,10 @@
 	<hr>
       <p>2. A file named <code>example.txt</code> is stored outside of your Java file's current directory, inside of a folder named <code>txt_files</code>.<br> 
          What is the proper syntax to access this file?<br><br>
-        &nbsp;&nbsp;&nbsp; A. <code>String filePath = "txt_files/example.txt";</code>
-        &nbsp;&nbsp;&nbsp; B. <code>String filePath = "example.txt";</code>
-        &nbsp;&nbsp;&nbsp; C. <code>String filepath = "example.txt/txt_files";</code>
-        &nbsp;&nbsp;&nbsp; D. <code>String filePath = "txt_files\\example.txt";</code>
+        &nbsp;&nbsp;&nbsp; A. <code>String filePath = "txt_files/example.txt";</code><br>
+        &nbsp;&nbsp;&nbsp; B. <code>String filePath = "example.txt";</code><br>
+        &nbsp;&nbsp;&nbsp; C. <code>String filepath = "example.txt/txt_files";</code><br>
+        &nbsp;&nbsp;&nbsp; D. <code>String filePath = "txt_files\\example.txt";</code><br>
 </p>
 	<hr>
       <p>3. Which of the following are true about writing and appending to a text file?<br><br>  
@@ -45,7 +45,7 @@
   	</p>
 	<hr>
       <p>4. What is the purpose of using a try-catch block with <code>Scanner</code> and <code>PrintWriter</code>?<br><br>
-      &nbsp;&nbsp;&nbsp; A. If your program can't find the file specified to read or modify, the try-catch block will alert you of an error<br>
+      &nbsp;&nbsp;&nbsp; A. The try-catch block can alert you of a file-not-found error<br>
       &nbsp;&nbsp;&nbsp; B. <code>Scanner</code> and <code>PrintWriter</code> will not function properly without a try-catch block<br>
       &nbsp;&nbsp;&nbsp; C. A try-catch prevents large files from being corrupted during parsing<br>
       &nbsp;&nbsp;&nbsp; D. A try-catch block optimizes the performance of <code>Scanner</code> and <code>PrintWriter</code></code>
